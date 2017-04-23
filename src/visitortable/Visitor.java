@@ -7,6 +7,7 @@ package visitortable;
 
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 
 /**
  *
@@ -46,7 +47,13 @@ public Visitor(int id,
     public String getCountry() {
         return country.get();
     }
-
-
+    
+    public void setCity(String city) {
+        this.city.set(city);
+    }
+    
+    public StringProperty CityProperty(){
+        return city;
+    }
     
 }
