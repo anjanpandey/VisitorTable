@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visitortable.VisitorTableController">
+   <children>
+      <TableView fx:id="tableId" layoutX="41.0" layoutY="122.0" prefHeight="367.0" prefWidth="625.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="102.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="140.0" text="Name" />
+            <TableColumn fx:id="city" prefWidth="145.0" text="City" />
+            <TableColumn fx:id="country" prefWidth="176.0" text="Country" />
+        </columns>
+      </TableView>
+      <TextField layoutX="63.0" layoutY="61.0" prefHeight="43.0" prefWidth="195.0" promptText="City" />
+      <TextField layoutX="329.0" layoutY="61.0" prefHeight="43.0" prefWidth="195.0" promptText="Country" />
+      <Label layoutX="286.0" layoutY="74.0" text="OR" />
+      <Label layoutX="63.0" layoutY="31.0" prefHeight="17.0" prefWidth="80.0" text="SORT BY" />
+   </children>
+</AnchorPane>
